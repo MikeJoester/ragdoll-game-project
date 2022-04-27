@@ -9,6 +9,8 @@ public class LoadArea : MonoBehaviour
     [SerializeField]
     public string sceneName;
 
+    public Animator SceneTransition;
+
     void Start() {
         
     }
@@ -20,8 +22,15 @@ public class LoadArea : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider) {
         if(collider.gameObject.tag == "Player") {
-            SceneManager.LoadScene(sceneName);
-            Console.WriteLine("collided");
+            StartCoroutine(LoadLevel());
         }
+    }
+
+    IEnumerator LoadLevel() {
+        SceneTransition.SetTrigger("Start");
+
+        yield return new WaitForSeconds(1);
+
+        SceneManager.LoadScene(sceneName);
     }
 }
