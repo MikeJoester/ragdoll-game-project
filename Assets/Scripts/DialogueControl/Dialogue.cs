@@ -8,6 +8,7 @@ public class Dialogue : MonoBehaviour
     public TextMeshProUGUI textComponent;
     public string[] lines;
     public float textSpeed;
+    public GameObject DialogueScreen;
 
     private int index;
 
@@ -50,7 +51,7 @@ public class Dialogue : MonoBehaviour
             StartCoroutine(TypeLine());
         }
         else {
-            gameObject.SetActive(false);
+            DialogueScreen.SetActive(false);
         }
     }
 }

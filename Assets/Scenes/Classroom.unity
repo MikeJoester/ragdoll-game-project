@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 97497981}
   m_Layer: 5
-  m_Name: Lan
+  m_Name: Chi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -446,7 +446,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 215fd0766c50822419c0ec61b15c8a8c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c8c47ecba0d2f3e49843ade5552ef6e3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -872,10 +872,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1783964068}
   lines:
-  - "C\xF4 gi\xE1o: Em nh\u1EDB l\xE0m b\xE0i t\u1EADp \u0111\u1EA7y \u0111\u1EE7
-    khi v\u1EC1 nh\xE0 nh\xE9."
-  - "C\xF4 gi\xE1o: Sao v\u1EADy? Em mu\u1ED1n h\u1ECFi c\xF4 chuy\u1EC7n g\xEC \xE0?"
+  - "Hiii, m\xECnh l\xE0 seatmate c\u1EF1c k\xEC th\xE2n thi\u1EC7n v\xE0 d\u1EC5
+    th\u01B0\u01A1ng. M\xECnh c\u0169ng mong \u0111\u01B0\u1EE3c \u0111\u1ED3ng h\xE0nh
+    v\u1EDBi b\u1EA1n trong \u0111\u1EE3t demo ti\u1EBFp theo!"
   textSpeed: 0.06
+  DialogueScreen: {fileID: 1063020179}
 --- !u!114 &295250164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1979,7 +1980,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 215fd0766c50822419c0ec61b15c8a8c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6de4fc36c6e786b47b5c8239338dadef, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2899,10 +2900,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1753780001}
   lines:
-  - "C\xF4 gi\xE1o: Em nh\u1EDB l\xE0m b\xE0i t\u1EADp \u0111\u1EA7y \u0111\u1EE7
-    khi v\u1EC1 nh\xE0 nh\xE9."
-  - "C\xF4 gi\xE1o: Sao v\u1EADy? Em mu\u1ED1n h\u1ECFi c\xF4 chuy\u1EC7n g\xEC \xE0?"
+  - "B\u1EA3o: M\xECnh l\xE0 B\u1EA3o, m\xECnh c\u0169ng s\u1EBD c\xF9ng b\u1EA1n
+    tham gia v\xE0o h\xE0nh tr\xECnh k\xEC th\xFA n\xE0y trong nh\u1EEFng \u0111\u1EE3t
+    demo ti\u1EBFp theo nh\xE9!"
   textSpeed: 0.06
+  DialogueScreen: {fileID: 327575170}
 --- !u!114 &756050731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2998,7 +3000,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 215fd0766c50822419c0ec61b15c8a8c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 67a0d4e50062898469109d1611f2fcd3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3184,10 +3186,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 2123762981}
   lines:
-  - "C\xF4 gi\xE1o: Em nh\u1EDB l\xE0m b\xE0i t\u1EADp \u0111\u1EA7y \u0111\u1EE7
-    khi v\u1EC1 nh\xE0 nh\xE9."
-  - "C\xF4 gi\xE1o: Sao v\u1EADy? Em mu\u1ED1n h\u1ECFi c\xF4 chuy\u1EC7n g\xEC \xE0?"
+  - "Chi: Ch...Ch\xE0o m\u1ECDi ng\u01B0\u1EDDi, m\xECnh l\xE0 Chi. C\xE1c b\u1EA1n
+    h\xE3y \u0111\xF3n ch\u1EDD \u0111\u1EE3t demo s\u1EAFp t\u1EDBi nh\xE9..."
   textSpeed: 0.06
+  DialogueScreen: {fileID: 97497980}
 --- !u!114 &1036202828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5656,7 +5658,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 215fd0766c50822419c0ec61b15c8a8c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0fbb5807b2a24f943aa80a69e1bf613f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9908,7 +9910,7 @@ GameObject:
   - component: {fileID: 1185689469}
   - component: {fileID: 1185689468}
   m_Layer: 0
-  m_Name: Lan
+  m_Name: Chi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9983,7 +9985,7 @@ SpriteRenderer:
   m_SortingLayerID: -1152467637
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -4767365051430884617, guid: 7db83fab4bd1757489936008d68ac32b, type: 3}
+  m_Sprite: {fileID: -5973306837312307897, guid: 378bdbb622cf64e4983d7e09b68f5ca7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -10198,10 +10200,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1592157369}
   lines:
-  - "C\xF4 gi\xE1o: Em nh\u1EDB l\xE0m b\xE0i t\u1EADp \u0111\u1EA7y \u0111\u1EE7
-    khi v\u1EC1 nh\xE0 nh\xE9."
-  - "C\xF4 gi\xE1o: Sao v\u1EADy? Em mu\u1ED1n h\u1ECFi c\xF4 chuy\u1EC7n g\xEC \xE0?"
+  - "\u0110\u1EA1t: M\xECnh l\xE0 \u0110\u1EA1t, v\xE0 m\xECnh s\u1EBD c\xF9ng \u0111\u1ED3ng
+    h\xE0nh v\u1EDBi b\u1EA1n trong \u0111\u1EE3t demo ti\u1EBFp theo n\xE8!"
   textSpeed: 0.06
+  DialogueScreen: {fileID: 1871764277}
 --- !u!114 &1400519459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12746,10 +12748,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1275336915}
   lines:
-  - "C\xF4 gi\xE1o: Em nh\u1EDB l\xE0m b\xE0i t\u1EADp \u0111\u1EA7y \u0111\u1EE7
-    khi v\u1EC1 nh\xE0 nh\xE9."
-  - "C\xF4 gi\xE1o: Sao v\u1EADy? Em mu\u1ED1n h\u1ECFi c\xF4 chuy\u1EC7n g\xEC \xE0?"
+  - "C\xF4 gi\xE1o: Ch\xE0o m\u1ECDi ng\u01B0\u1EDDi, t\xF4i l\xE0 c\xF4 gi\xE1o,
+    v\xE0 \u0111\xE2y l\xE0 b\u1EA3n demo \u0111\u1EA7u ti\xEAn c\u1EE7a game."
   textSpeed: 0.06
+  DialogueScreen: {fileID: 941673214}
 --- !u!1 &1680160939
 GameObject:
   m_ObjectHideFlags: 0
@@ -13759,7 +13761,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 430876158343907655, guid: 256c6706b13d54e42bfe237bfcfebbd8, type: 3}
       propertyPath: m_Name
-      value: Chi
+      value: Lan
       objectReference: {fileID: 0}
     - target: {fileID: 847401040381010918, guid: 256c6706b13d54e42bfe237bfcfebbd8, type: 3}
       propertyPath: m_RootOrder
