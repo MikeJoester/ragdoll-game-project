@@ -9,7 +9,18 @@ public class CameraController : MonoBehaviour
     public Vector2 minPosition;
     public Vector2 maxPosition;
 
-    // Update is called once per frame
+    private static bool cameraExists;
+
+    void Start() {
+        // if (!cameraExists) {
+        //     cameraExists = true;
+        //     DontDestroyOnLoad(transform.gameObject);
+        // }
+        // else {
+        //     Destroy(gameObject);
+        // }
+    }
+
     void LateUpdate() {
         if (transform.position != target.position) {
             Vector3 targetPosition = new Vector3(target.position.x, target.position.y, transform.position.z);

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovements : MonoBehaviour
 {
@@ -12,13 +13,13 @@ public class PlayerMovements : MonoBehaviour
     Vector2 movement;
 
     void Start() {
-        if (!playerExists) {
-            playerExists = true;
-            DontDestroyOnLoad(transform.gameObject);
-        }
-        else {
-            Destroy(gameObject);
-        }
+        // if (!playerExists) {
+        //     playerExists = true;
+        //     DontDestroyOnLoad(transform.gameObject);
+        // }
+        // else {
+        //     Destroy(gameObject);
+        // }
     }
 
     // Update is called once per frame
