@@ -8,7 +8,18 @@ public class PlayerMovements : MonoBehaviour
     public Rigidbody2D rb;
     public Animator animator;
 
+    private static bool playerExists;
     Vector2 movement;
+
+    void Start() {
+        if (!playerExists) {
+            playerExists = true;
+            DontDestroyOnLoad(transform.gameObject);
+        }
+        else {
+            Destroy(gameObject);
+        }
+    }
 
     // Update is called once per frame
     void Update() {
