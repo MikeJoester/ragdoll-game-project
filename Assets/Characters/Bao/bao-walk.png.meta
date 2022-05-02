@@ -60,6 +60,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -412,6 +413,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      bao-walk_5: -4854267889659332034
+      bao-walk_7: -5016284833579978568
+      bao-walk_10: -714926403176764992
+      bao-walk_1: 2729156220920707800
+      bao-walk_4: -2267753415515802951
+      bao-walk_2: -5116999355988190962
+      bao-walk_0: -6518735218785983451
+      bao-walk_3: -2724754100246339303
+      bao-walk_6: -1714590097078100051
+      bao-walk_8: -5326374873677767030
+      bao-walk_11: -305095052733359264
+      bao-walk_9: -920205170106844662
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
