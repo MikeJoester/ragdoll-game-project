@@ -1,20 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class Dialogue : MonoBehaviour
 {
+    [Header("Dialogue")]
     public TextMeshProUGUI textComponent;
     public string[] lines;
-    public float textSpeed;
+    public static float textSpeed = 0.09f;
+    public static int CharPhase = 0;
     public GameObject DialogueScreen;
+
+    [Header("Character")]
+    public Image Character;
+    public Image charBorder;
+    public Sprite[] spriteArray;
+    public int AppearIndex;
 
     private int index;
 
     void Start()
     {
         textComponent.text = string.Empty;
+        charBorder.enabled = false;
+        Character.enabled = false;
         StartDialogue();
     }
 
@@ -23,11 +35,19 @@ public class Dialogue : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0)) {
             if (textComponent.text == lines[index]) {
+                if (CharPhase == AppearIndex) {
+                    charBorder.enabled = true;
+                    Character.enabled = true;
+                }
+    
                 NextLine();
+
+                Character.sprite = spriteArray[CharPhase - AppearIndex];
             }
             else {
                 StopAllCoroutines();
                 textComponent.text = lines[index];
+                CharPhase += 1;
             }
         }
     }
