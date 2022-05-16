@@ -10,18 +10,16 @@ public class LoadArea : MonoBehaviour
     public string sceneName;
 
     public Animator SceneTransition;
+    private GameObject playerObj = null;
 
     void Start() {
         
     }
 
-    // Update is called once per frame
-    void Update() {
-        
-    }
-
     void OnTriggerEnter2D(Collider2D collider) {
         if(collider.gameObject.tag == "Player") {
+            playerObj = collider.gameObject;
+            Debug.Log("Player Position: X = " + playerObj.transform.position.x + " --- Y = " + playerObj.transform.position.y + " --- Z = " + playerObj.transform.position.z);
             StartCoroutine(LoadLevel());
         }
     }

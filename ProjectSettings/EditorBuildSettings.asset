@@ -6,12 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/StartScreen.unity
+    guid: 7fa6cc0e4e4977242be753d0b06c903c
+  - enabled: 1
     path: Assets/Scenes/Classroom.unity
     guid: dcd151011e7fbf14aafcca365fb94c0e
+  - enabled: 1
+    path: Assets/Scenes/Playground.unity
+    guid: 1a70c8fd5af19764a85c4bf50c50b9ba
+  - enabled: 1
+    path: Assets/Scenes/House-Chi.unity
+    guid: bd088661136a0c249a3e8dbc5edb8f12
   - enabled: 1
     path: Assets/Scenes/School.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Playground.unity
-    guid: 1a70c8fd5af19764a85c4bf50c50b9ba
+    path: Assets/Scenes/PoliceDept.unity
+    guid: ee5ff486f34d8504c90eada9aa4593d1
   m_configObjects: {}
