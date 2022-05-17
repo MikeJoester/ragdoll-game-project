@@ -12,13 +12,13 @@ public class CameraController : MonoBehaviour
     private static bool cameraExists;
 
     void Start() {
-        // if (!cameraExists) {
-        //     cameraExists = true;
-        //     DontDestroyOnLoad(transform.gameObject);
-        // }
-        // else {
-        //     Destroy(gameObject);
-        // }
+        if (!cameraExists) {
+            cameraExists = true;
+            DontDestroyOnLoad(transform.gameObject);
+        }
+        else {
+            Destroy(gameObject);
+        }
     }
 
     void LateUpdate() {

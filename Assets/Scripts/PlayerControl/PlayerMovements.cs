@@ -6,20 +6,25 @@ using UnityEngine.SceneManagement;
 public class PlayerMovements : MonoBehaviour
 {
     public float moveSpeed = 5f;
-    public Rigidbody2D rb;
-    public Animator animator;
+    private Rigidbody2D rb;
+    private Animator animator;
+
+    public string startPoint;
 
     private static bool playerExists;
+    public Vector2 lastPosition;
     Vector2 movement;
 
     void Start() {
-        // if (!playerExists) {
-        //     playerExists = true;
-        //     DontDestroyOnLoad(transform.gameObject);
-        // }
-        // else {
-        //     Destroy(gameObject);
-        // }
+        rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+        if (!playerExists) {
+            playerExists = true;
+            DontDestroyOnLoad(transform.gameObject);
+        }
+        else {
+            Destroy(gameObject);
+        }
     }
 
     // Update is called once per frame

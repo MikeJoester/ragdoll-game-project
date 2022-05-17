@@ -8,18 +8,19 @@ public class LoadArea : MonoBehaviour
 {
     [SerializeField]
     public string sceneName;
+    public string exitPoint;
+    private PlayerMovements player_;
 
     public Animator SceneTransition;
-    private GameObject playerObj = null;
 
     void Start() {
-        
+        player_ = FindObjectOfType<PlayerMovements>();
     }
 
     void OnTriggerEnter2D(Collider2D collider) {
         if(collider.gameObject.tag == "Player") {
-            playerObj = collider.gameObject;
-            Debug.Log("Player Position: X = " + playerObj.transform.position.x + " --- Y = " + playerObj.transform.position.y + " --- Z = " + playerObj.transform.position.z);
+            player_.startPoint = exitPoint;
+
             StartCoroutine(LoadLevel());
         }
     }
