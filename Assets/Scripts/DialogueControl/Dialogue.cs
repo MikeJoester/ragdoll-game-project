@@ -25,21 +25,22 @@ public class Dialogue : MonoBehaviour
     void Start()
     {
         textComponent.text = string.Empty;
-        charBorder.enabled = false;
-        Character.enabled = false;
+        charBorder.enabled = true;
+        Character.enabled = true;
         StartDialogue();
     }
 
     // Update is called once per frame
     void Update()
     {
+        // if (CharPhase == AppearIndex) {
+        //     charBorder.enabled = true;
+        //     Character.enabled = true;
+        // }
+        
         if (Input.GetMouseButtonDown(0)) {
+            
             if (textComponent.text == lines[index]) {
-                if (CharPhase == AppearIndex) {
-                    charBorder.enabled = true;
-                    Character.enabled = true;
-                }
-    
                 NextLine();
 
                 Character.sprite = spriteArray[CharPhase - AppearIndex];
