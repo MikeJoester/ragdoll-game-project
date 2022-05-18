@@ -22,8 +22,8 @@ public class PlayerStartPoint : MonoBehaviour
         // }
         
 
-        // camera = FindObjectOfType<CameraController>();
-        // camera.transform.position = new Vector3(transform.position.x, transform.position.y, camera.transform.position.z);
+        camera = FindObjectOfType<CameraController>();
+        camera.transform.position = new Vector3(transform.position.x, transform.position.y, camera.transform.position.z);
     }
 
     // Update is called once per frame
