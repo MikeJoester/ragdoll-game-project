@@ -9,17 +9,17 @@ public class LoadArea : MonoBehaviour
     [SerializeField]
     public string sceneName;
     public string exitPoint;
-    private PlayerMovements player_;
+    private PlayerMovements player;
 
     public Animator SceneTransition;
 
     void Start() {
-        player_ = FindObjectOfType<PlayerMovements>();
+        player = FindObjectOfType<PlayerMovements>();
     }
 
     void OnTriggerEnter2D(Collider2D collider) {
         if(collider.gameObject.tag == "Player") {
-            player_.startPoint = exitPoint;
+            player.startPoint = exitPoint;
 
             StartCoroutine(LoadLevel());
         }

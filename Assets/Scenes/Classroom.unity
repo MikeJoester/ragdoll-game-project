@@ -12042,7 +12042,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startDirection: {x: 0, y: 0}
-  pointName: 
+  pointName: School In
 --- !u!4 &1307412416
 Transform:
   m_ObjectHideFlags: 0

@@ -6,8 +6,14 @@ public class CameraController : MonoBehaviour
 {
     public Transform target;
     public float smoothing;
-    public Vector2 minPosition;
-    public Vector2 maxPosition;
+
+    public BoxCollider2D boundBox;
+    private Vector2 minPosition;
+    private Vector2 maxPosition;
+
+    private Camera camera;
+    private float halfHeight;
+    private float halfWidth;
 
     private static bool cameraExists;
 
@@ -19,16 +25,27 @@ public class CameraController : MonoBehaviour
         else {
             Destroy(gameObject);
         }
+
+        minPosition = boundBox.bounds.min;
+        maxPosition = boundBox.bounds.max;
+
+        camera = GetComponent<Camera>();
+        halfHeight = camera.orthographicSize;
+        halfWidth = 2 * halfHeight * (Screen.width / Screen.height);
     }
 
     void Update() {
         if (transform.position != target.position) {
             Vector3 targetPosition = new Vector3(target.position.x, target.position.y, transform.position.z);
             
-            targetPosition.x = Mathf.Clamp(target.position.x, minPosition.x, maxPosition.x);
-            targetPosition.y = Mathf.Clamp(target.position.y, minPosition.y, maxPosition.y);
+            targetPosition.x = Mathf.Clamp(target.position.x, minPosition.x + halfWidth, maxPosition.x - halfWidth);
+            targetPosition.y = Mathf.Clamp(target.position.y, minPosition.y + halfHeight, maxPosition.y - halfHeight);
             
             transform.position = Vector3.Lerp(transform.position, targetPosition, smoothing);
+
+            // float clampedX = Mathf.Clamp(transform.position.x, minPosition.x + halfWidth, maxPosition.x - halfWidth);
+            // float clampedY = Mathf.Clamp(transform.position.y, minPosition.y + halfHeight, maxPosition.y - halfHeight);
+            // transform.position = new Vector3(clampedX, clampedY, transform.position.z);
         }
     }
 }
