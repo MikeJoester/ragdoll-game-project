@@ -7,6 +7,7 @@ public class SFXManager : MonoBehaviour
     public AudioSource playerGrab;
     public AudioSource playerEnter;
     public AudioSource playerInteract;
+    public AudioSource openMenu;
     
     private static bool sfxExists;
 
