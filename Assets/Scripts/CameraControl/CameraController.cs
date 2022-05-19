@@ -43,9 +43,22 @@ public class CameraController : MonoBehaviour
             
             transform.position = Vector3.Lerp(transform.position, targetPosition, smoothing);
 
+            if (boundBox == null) {
+                boundBox = FindObjectOfType<BoundaryObject>().GetComponent<BoxCollider2D>();
+                minPosition = boundBox.bounds.min;
+                maxPosition = boundBox.bounds.max;
+            }
+
             // float clampedX = Mathf.Clamp(transform.position.x, minPosition.x + halfWidth, maxPosition.x - halfWidth);
             // float clampedY = Mathf.Clamp(transform.position.y, minPosition.y + halfHeight, maxPosition.y - halfHeight);
             // transform.position = new Vector3(clampedX, clampedY, transform.position.z);
         }
+    }
+
+    public void SetBounds(BoxCollider2D newBounds) {
+        boundBox = newBounds;
+
+        minPosition = boundBox.bounds.min;
+        maxPosition = boundBox.bounds.max;
     }
 }
