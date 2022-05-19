@@ -6,13 +6,15 @@ public class DialogueTrigger : MonoBehaviour
 {
     private bool triggerEntered = false;
     public GameObject DialogueScreen;
+    private SFXManager sfxMan;
 
     void Start() {
-        
+        sfxMan = FindObjectOfType<SFXManager>();
     }
 
     void Update() {
         if (Input.GetKeyDown(KeyCode.E) && triggerEntered == true) {
+            sfxMan.playerInteract.Play();
             DialogueScreen.SetActive(true);
         }
     }

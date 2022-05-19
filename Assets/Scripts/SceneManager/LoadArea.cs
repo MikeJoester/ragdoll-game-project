@@ -12,14 +12,17 @@ public class LoadArea : MonoBehaviour
     private PlayerMovements player;
 
     public Animator SceneTransition;
+    private SFXManager sfxMan;
 
     void Start() {
         player = FindObjectOfType<PlayerMovements>();
+        sfxMan = FindObjectOfType<SFXManager>();
     }
 
     void OnTriggerEnter2D(Collider2D collider) {
         if(collider.gameObject.tag == "Player") {
             player.startPoint = exitPoint;
+            sfxMan.playerEnter.Play();
 
             StartCoroutine(LoadLevel());
         }

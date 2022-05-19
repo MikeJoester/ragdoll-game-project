@@ -18,6 +18,7 @@ public class PlayerMovements : MonoBehaviour
     void Start() {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+
         if (!playerExists) {
             playerExists = true;
             DontDestroyOnLoad(transform.gameObject);
