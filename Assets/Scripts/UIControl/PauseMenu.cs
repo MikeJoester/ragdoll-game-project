@@ -11,13 +11,13 @@ public class PauseMenu : MonoBehaviour {
 
     void Start() {
         sfxMan = FindObjectOfType<SFXManager>();
-        // if (!menuExists) {
-        //     cameraExists = true;
-        //     DontDestroyOnLoad(transform.gameObject);
-        // }
-        // else {
-        //     Destroy(gameObject);
-        // }
+        if (!menuExists) {
+            menuExists = true;
+            DontDestroyOnLoad(transform.gameObject);
+        }
+        else {
+            Destroy(gameObject);
+        }
     }
     
     void Update() {

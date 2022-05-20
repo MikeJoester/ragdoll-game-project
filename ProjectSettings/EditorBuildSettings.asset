@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PoliceDept.unity
     guid: ee5ff486f34d8504c90eada9aa4593d1
+  - enabled: 1
+    path: Assets/Scenes/WinnerUI.unity
+    guid: cf35111b3a0425245b9e4834c8e52690
   m_configObjects: {}

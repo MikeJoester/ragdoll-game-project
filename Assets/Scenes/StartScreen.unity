@@ -1333,7 +1333,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   press: {fileID: 1970424512}
-  SceneTransition: {fileID: 590380484}
 --- !u!1 &1718949208
 GameObject:
   m_ObjectHideFlags: 0

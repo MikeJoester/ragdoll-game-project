@@ -11,7 +11,6 @@ public class LoadArea : MonoBehaviour
     public string exitPoint;
     private PlayerMovements player;
 
-    public Animator SceneTransition;
     private SFXManager sfxMan;
 
     void Start() {
@@ -29,8 +28,6 @@ public class LoadArea : MonoBehaviour
     }
 
     IEnumerator LoadLevel() {
-        SceneTransition.SetTrigger("Start");
-
         yield return new WaitForSeconds(1);
 
         SceneManager.LoadScene(sceneName);

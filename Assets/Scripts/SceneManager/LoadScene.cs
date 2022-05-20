@@ -15,16 +15,22 @@ public class LoadScene : MonoBehaviour
 
     public void StartButton() {
         press.Play();
-        StartCoroutine(LevelTransition());
+        SceneManager.LoadScene("Map1");
+        // StartCoroutine(LevelTransition());
     }
 
     public void LoadButton() {
         press.Play();
-        StartCoroutine(GameContinue());
+        SceneManager.LoadScene("Map1");
+        // StartCoroutine(GameContinue());
     }
 
     public void ExitButton() {
         Application.Quit();
+    }
+
+    public void GameOver() {
+        SceneManager.LoadScene("WinnerUI");
     }
 
     IEnumerator LevelTransition() {
